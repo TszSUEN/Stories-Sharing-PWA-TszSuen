@@ -5,6 +5,7 @@ COM3504 Intelligent Web
 1. Open the project on IntelliJ IDEA
 2. run 'npm install'
 3. run 'node app.js'
+4. run http://localhost:3000/
 
 # Access the PWA project
 1. Login: com3504@gmail.com
