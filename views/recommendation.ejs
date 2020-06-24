@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="/javascripts/stories.js"></script>
+    <script src="/javascripts/users.js"></script>
+    <script src="/javascripts/global.js"></script>
+    <title>Recommendation System</title>
+</head>
+
+<body>
+<h1>Welcome to the Recommendation System</h1>
+<p>Please fill the form to get stories suggestions</p>
+
+<div class="form-item">
+<form onsubmit="onSubmit()" method="POST">
+    <h2>User Name:</h2>
+    <input type="text" name="name" id="name" value="">
+    <button class="btn btn-primary" type="submit">Submit</button>
+</form>
+</div>
+
+<br>
+result:
+<div id="results" class="form-item"></div>
+
+</body>
+</html>

@@ -1,0 +1,10 @@
+<% storyPictureClass = locals.large ? 'story-picture-large' : '' %>
+<% storyGridClass = locals.large ? 'story-grid-large' : '' %>
+
+<div class="story-grid <%= storyGridClass %>">
+  <% stories.forEach(story => { %>
+    <a href="/stories/<%= story.id %>">
+      <img class="story-picture <%= storyPictureClass %>" src="<%= story.getImageResults %>">
+    </a>
+  <% }) %>
+</div>

@@ -1,0 +1,24 @@
+<h2 class="page-header"><%= story.title %></h2>
+<div class="story-details">
+  <div>
+    <img class="story-picture" src="<%= story.getImageResults %>">
+    <div class="story-details-btn-grid">
+
+<!-- this part is for admin -- edit/ delete  -->
+<!--      <a class="btn btn-primary" href="/stories/<%= story.id %>/edit">Edit</a>-->
+<!--      <%- include('../sectionals/delete_form', { url: `/stories/${story.id}` }) %>-->
+
+      <a class="btn btn-primary story-details-user-button" href="/users/<%= story.user %>">View User</a>
+    </div>
+  </div>
+  <div class="story-details-grid">
+    <div class="story-details-label">User:</div>
+    <div><%= story.user %></div>
+    <div class="story-details-label">Publish Date:</div>
+    <div><%= story.publishDate.toDateString() %></div>
+    <div class="story-details-label">Ranking:</div>
+    <div><%= story.ranking %></div>
+    <div class="story-details-label">Description:</div>
+    <div><%= story.description %></div>
+  </div>
+</div>

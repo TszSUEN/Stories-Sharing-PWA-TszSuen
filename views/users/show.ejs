@@ -1,0 +1,14 @@
+<h1 class="page-header">Username: <%= user.username %></h1>
+<h1 class="page-header">Email: <%= user.email%></h1>
+<div class="btn-row">
+
+<!--  this part is for admin! -- edit/ delete a user information  -->
+<!--  <a class="btn btn-primary" href="/users/<%= user.id %>/edit">Edit</a>-->
+<!--  <%- include('../sectionals/delete_form',  { url: `/users/${user.id}` }) %>-->
+
+</div>
+
+<% if (storiesByUser.length > 0) { %>
+  <h2 class="page-header">Stories By This User</h2><br>
+  <%- include('../sectionals/storyGrid', { stories: storiesByUser }) %>
+<% } %>

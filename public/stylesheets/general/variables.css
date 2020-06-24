@@ -1,0 +1,8 @@
+:root {
+  --color-base-hue: 200;
+  --color-danger-hue-offset: 500;
+  --color-danger-hue: calc(200 - var(--color-danger-hue-offset));
+  --color-background-dark: hsl(320, 50%, 30%);
+  --color-background-light: hsl(var(--color-base-hue), 100%, 20%);
+  --color-text-light: hsl(100, 100%, 80%);
+}

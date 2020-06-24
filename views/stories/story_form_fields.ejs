@@ -1,0 +1,29 @@
+<div class="form-row">
+  <!-- Input part 1 -->
+  <div class="form-item">
+    <label>Title</label>
+    <input type="text" name="title" value="<%= story.title %>">
+  </div>
+</div>
+
+<div class="form-row">
+  <!-- Input part 2 -->
+  <div class="form-item">
+    <label>Publish Date</label>
+    <input type="date" name="publishDate"
+          value="<%= story.publishDate == null ? '' : story.publishDate.toISOString().split('T')[0] %>">
+  </div>
+</div>
+
+<div class="form-row">
+  <!-- Input part 3 -->
+  <div class="form-item form-item-no-grow">
+    <label>Picture</label>
+    <input type="file" name="picture" class="story-picture filepond">
+  </div>
+  <!-- Input part 4 -->
+  <div class="form-item">
+    <label>Description</label>
+    <textarea name="description"><%= story.description %></textarea>
+  </div>
+</div>
